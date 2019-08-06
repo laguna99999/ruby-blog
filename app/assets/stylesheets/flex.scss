@@ -1,3 +1,53 @@
 // Place all the styles related to the flex controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu mono";
+}
+a{
+    text-decoration: none;
+}
+.menu-container{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        //border: 1px solid #fff;  /* For debugging */
+        width: 1200px;
+        padding: 5px 10px;
+        .link{
+            font-weight: 800;
+            display: flex;
+            justify-content: flex-end;
+            a{
+                color: #fff;
+            }
+            a:hover{
+                color: #000;
+                transition: 0.2s;
+            }
+            .login{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.header-container{
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+    .header{
+        width: 1200px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
